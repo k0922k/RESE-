@@ -1,0 +1,3 @@
+nano resources/views/emails/user_notification.blade.php
+exit
+

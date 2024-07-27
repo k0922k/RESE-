@@ -1,0 +1,62 @@
+body {
+    background-color: #f0f0f0;
+    /* 背景色を全体に適用 */
+}
+
+.container {
+    padding: 20px;
+    /* 上下の余白は残して左右の余白を消す */
+    width: 100%;
+    box-sizing: border-box;
+    /* ボックスモデルの計算方法を調整 */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group input[type="date"],
+.form-group input[type="time"],
+.form-group input[type="number"],
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.alert ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 50px 50px 0 50px;
+    background-color: #f0f0f0;
+}
+
+.menu-icon {
+    background-color: #007bff;
+    color: white;
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rese-text {
+    color: #007bff;
+    font-size: 24px;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.input-box {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+select {
+    max-height: 200px;
+    /* ドロップダウンの最大高さを設定 */
+    overflow-y: auto;
+    /* 垂直方向のスクロールを許可 */
+}
+
+.search-input {
+    border: none;
+    padding: 10px 10px 10px 30px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    color: #999;
+}
+
+.menu-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-links ul li {
+    margin-right: 20px;
+    max-width: 200px;
+}
+
+.menu-links ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header {
+        padding: 30px;
+    }
+
+    .rese-text {
+        font-size: 22px;
+    }
+
+    .search-container {
+        padding: 10px;
+    }
+
+    .input-box,
+    .search-input {
+        width: 150px;
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        font-size: 22px;
+        padding: 7px;
+    }
+}

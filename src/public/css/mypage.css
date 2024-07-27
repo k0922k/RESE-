@@ -1,0 +1,210 @@
+/* Global Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #f0f0f0;
+}
+
+/* Reservation Styles */
+.reservation {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.reservation h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.reservation-card {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.reservation-card h3 {
+    margin-top: 0;
+}
+
+.reservation-card p {
+    margin: 5px 0;
+}
+
+.reservation-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reservation-card form label {
+    font-weight: bold;
+}
+
+.reservation-card form input[type="date"],
+.reservation-card form input[type="time"],
+.reservation-card form input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.reservation-card form button.update-button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reservation-card form button.update-button:hover {
+    background-color: #1f669d;
+}
+
+.cancel-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Review Styles */
+.review {
+    margin-top: 10px;
+}
+
+.stars {
+    display: flex;
+}
+
+.stars span {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.stars input[type='radio'] {
+    display: none;
+}
+
+.stars label {
+    color: #D2D2D2;
+    font-size: 30px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.stars label:hover,
+.stars label:hover~label,
+.stars input[type='radio']:checked~label {
+    color: #F8C601;
+}
+
+.review textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* Favorites Styles */
+.favorites {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.favorites h2 {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.shop-card {
+    width: calc(33.33% - 20px);
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-card img {
+    width: 100%;
+    height: auto;
+}
+
+.shop-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.shop-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.shop-card .shop-card-actions {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.shop-card .card__but {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.shop-card .card__but:hover {
+    background-color: #2980b9;
+}
+
+.shop-card .favorite-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.shop-card .favorite-button.favorited {
+    color: red;
+}
