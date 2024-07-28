@@ -41,7 +41,10 @@ Route::delete('/shop/{shop_id}/favorite', [UserController::class, 'toggleFavorit
 Route::get('/user-roles/{id}', [UserController::class, 'showRoles']);
 
 Route::post('/reviews/{reservation_id}', [ReviewController::class, 'store'])->name('review.store');
-Route::get('/generate-qr-code/{reservationId}', [QrCodeController::class, 'generate'])->name('generate.qr_code')->middleware('auth');
+
+
+Route::get('/generate-qr-code/{reservationId}',
+[QrCodeController::class, 'generate'])->name('generate.qr_code')->middleware('auth');
 Route::post('/validate-qr-code', [QrCodeValidationController::class, 'validateQrCode'])->name('validate_qr_code')->middleware('auth');
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
@@ -55,10 +58,9 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/store-representatives/list', [AdminController::class, 'list'])->name('admin.store_representatives.list');
     Route::get('/admin/store-representatives/create', [AdminController::class, 'create'])->name('admin.store_representatives.create');
     Route::post('/admin/store-representatives', [AdminController::class, 'store'])->name('admin.store_representatives.store');
-    Route::put('/admin/store-representatives/{id}/edit', [AdminController::class, 'edit'])->name('admin.store_representatives.edit');
+    Route::get('/admin/store-representatives/{id}/edit', [AdminController::class, 'edit'])->name('admin.store_representatives.edit');
     Route::put('/admin/store-representatives/{id}', [AdminController::class, 'update'])->name('admin.store_representatives.update');
     Route::delete('/admin/store_representatives/{id}', [AdminController::class, 'destroy'])->name('admin.store_representatives.destroy');
     Route::post('/admin/send-notification', [AdminController::class, 'sendNotification'])->name('admin.sendNotification');
     Route::get('/admin/send-notification', [AdminController::class, 'showSendNotificationForm'])->name('admin.sendNotificationForm');
 });
-

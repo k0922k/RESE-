@@ -4,6 +4,8 @@
     <h1>新規店舗代表者作成</h1>
     <form action="{{ route('admin.store_representatives.store') }}" method="POST">
         @csrf
+        {{ method_field('PUT') }}
+
         <div>
             <label for="name">名前:</label>
             <input type="text" name="name" id="name" required>
@@ -24,6 +26,7 @@
                 @endforeach
             </select>
         </div>
+
         <button type="submit">作成</button>
     </form>
 @endsection
