@@ -52,4 +52,4 @@
    php artisan serve
 7. ブラウザでhttp://localhost:8000を開き、アプリケーションを確認します。
 ## ER図
-　![ER図](images\.drawio.png)
+　![ER図](images\image.png)
