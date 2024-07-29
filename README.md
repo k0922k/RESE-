@@ -23,6 +23,13 @@
 - **フロントエンド**: HTML, CSS, JavaScript, Blade
 - **その他**: Composer, Git, Simple QrCode
 
+## テーブル設計
+(https://docs.google.com/spreadsheets/d/1aYI_0dvXuDAXoC_migmiBuTSSC6lYGnvxP4TZgnuDvg/edit?usp=sharing)
+
+## ER図
+![ER図](images/image.png)
+
+
 ## 環境構築
 以下の手順に従ってプロジェクトをセットアップします。
 
@@ -51,6 +58,4 @@
    ```bash
    php artisan serve
 7. ブラウザでhttp://localhost:8000を開き、アプリケーションを確認します。
- ## ER図
-![ER図](images/image.png)
 
